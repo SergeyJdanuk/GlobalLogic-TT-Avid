@@ -1,0 +1,17 @@
+{
+  "name": "Global-Logic-TT-Avid",
+  "version": "1.0.0",
+  "description": "",
+  "engines": {
+    "node": "0.12.2",
+    "npm": "2.7.4"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "browser-sync": "^2.9.11",
+    "browserify": "^12.0.1",
+    "gulp": "^3.9.0",
+    "gulp-concat": "^2.6.0",
+    "vinyl-source-stream": "^1.1.0"
+  }
+}

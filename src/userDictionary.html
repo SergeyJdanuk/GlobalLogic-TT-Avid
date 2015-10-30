@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles/themes/bootstrap-3.3.5/bootstrap.css"/>
+    <link rel="stylesheet" href="styles/themes/bootstrap-3.3.5/bootstrap-theme.css"/>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <style>
+        body {
+            padding-top: 50px;
+        }
+        .starter-template {
+            padding: 40px 15px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">Global Logic</a>
+            </div>
+
+        </div>
+    </nav>
+
+    <br />
+
+    <div class="container">
+        <ol class="breadcrumb">
+            <li><a href="/">Home</a></li>
+            <li class="active">Users</li>
+        </ol>
+        <div>
+
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs" id="tab-users" role="tablist">
+                <li role="presentation" class="active"><a href="#tab-users-list" aria-controls="tab-users-list" role="tab" data-toggle="tab">List</a></li>
+                <li role="presentation"><a href="#tab-users-add" aria-controls="users-add" role="tab" data-toggle="tab">Add</a></li>
+            </ul>
+
+            <!-- Tab panes -->
+            <div class="tab-content">
+                <div role="tabpanel" class="tab-pane active" id="tab-users-list">
+                    <br />
+                    <table class="table table-striped" id="users-list">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Phone number</th>
+                                <th>Email</th>
+                                <th>Home site url</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                        </tbody>
+                    </table>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="tab-users-add">
+                    <br />
+                    <form class="form-horizontal">
+                        <div class="form-group">
+                            <label for="inputName" class="col-sm-2 control-label">Name</label>
+                            <div class="col-sm-5">
+                                <input type="text" name="name" class="form-control input-lg" id="inputName">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputPhoneNumber" class="col-sm-2 control-label">Phone&nbsp;number</label>
+                            <div class="col-xs-5">
+                                <input type="text" name="phoneNumber" class="form-control" id="inputPhoneNumber">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputEmail" class="col-sm-2 control-label">Email</label>
+                            <div class="col-xs-5">
+                                <input type="email" name="email" class="form-control" id="inputEmail">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputHomeSiteUrl" class="col-sm-2 control-label">Home site url</label>
+                            <div class="col-xs-5">
+                                <input type="text" name="homeSiteUrl" class="form-control" id="inputHomeSiteUrl">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-offset-2 col-xs-5">
+                                <button type="submit" class="btn btn-default">Add</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+
+    </div><!-- /.container -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="errorModalDialog" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Error</h4>
+                </div>
+                <div class="modal-body">
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="template" id="users-list-row">
+        <tr>
+            <td>{name}</td>
+            <td>{phoneNumber}</td>
+            <td>{email}</td>
+            <td>{homeSiteUrl}</td>
+        </tr>
+    </script>
+    <script src="js/vendors.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
