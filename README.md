@@ -23,7 +23,4 @@ All code are in "src/js/"
 2. Run command `npm install`
 3. Run command `./node_modules/.bin/gulp`
 
-# Base configuration of project
-
-https://github.com/vigetlabs/gulp-starter.git
 
